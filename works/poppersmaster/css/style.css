@@ -1839,7 +1839,9 @@ input, textarea, button, select {
       -webkit-animation: circle;
       animation: circle;
       -webkit-animation-duration: 1s;
-      animation-duration: 1s; }
+      animation-duration: 1s;
+      -webkit-animation-play-state: play;
+      animation-play-state: play; }
     .topbar-cart-goods {
       font-size: 14px;
       background: #c90c0b;
