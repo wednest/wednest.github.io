@@ -1835,7 +1835,11 @@ input, textarea, button, select {
     .topbar-cart img {
       margin-left: 14px;
       height: 40px;
-      width: 40px; }
+      width: 40px;
+      -webkit-animation: circle;
+      animation: circle;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s; }
     .topbar-cart-goods {
       font-size: 14px;
       background: #c90c0b;
@@ -2176,6 +2180,8 @@ input, textarea, select {
 
 .owl-carousel.product-imgs .item {
   position: relative; }
+  .owl-carousel.product-imgs .item a:hover img {
+    opacity: .7; }
 
 .owl-carousel.product-imgs .owl-nav {
   width: 100%;
@@ -2449,59 +2455,27 @@ input, textarea, select {
     .select-options li[rel="hide"] {
       display: none; }
 
-.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes rubberBand {
+@-webkit-keyframes circle {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1); }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1); }
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6); }
   50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1); }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1); }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1); }
+    -webkit-transform: rotate(-180deg) scale(0.6);
+    transform: rotate(-180deg) scale(0.6); }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1); } }
 
-@keyframes rubberBand {
+@keyframes circle {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1); }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1); }
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6); }
   50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1); }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1); }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1); }
+    -webkit-transform: rotate(-180deg) scale(0.6);
+    transform: rotate(-180deg) scale(0.6); }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1); } }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
