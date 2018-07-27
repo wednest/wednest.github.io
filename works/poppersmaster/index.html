@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +22,13 @@
 
   <div class="topbar mh-head Sticky" id="my-header">
     <div class="topbar-left">
-      <a href="#top" class="topbar-logo"></a>
+      <a href="#top" class="topbar-logo">
+        <img src="img/red-logo.svg" alt="Логотип">
+        <div class="logotype">
+          PoppersMarket
+          <span>Магазин сертифицированных попперсов</span>
+        </div>
+      </a>
       <nav class="topbar-nav">
         <ul>
           <li>
@@ -40,7 +47,8 @@
       </nav>
     </div>
     <a class="topbar-cart">
-      Корзина пуста
+      Бесплатная доставка:
+      <br> ещё 600р
       <img src="img/cart.svg" alt="Корзина">
       <div class="topbar-cart-goods">
         6
@@ -49,9 +57,9 @@
   </div>
 
 
-  <div class="page" id="canvas">
+  <div class="page">
 
-    <div class="owl-carousel">
+    <div class="owl-carousel main">
 
       <div class="container item">
         <div>
@@ -99,253 +107,396 @@
           <span>продолжительность действия</span>
           <i class="fas fa-clock"></i>
         </p>
-        <div class="row">
 
+        <div class="row products">
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-lg-4 product-margin">
             <div class="product">
-              <div class="row">
-                <div class="col-lg-5">
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-md-4">
-                      <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/2.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/3.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                  </div>
+              <div class="owl-carousel product-imgs">
+                <div class="item">
+                  <a href="img/product/1.png" class="image-link">
+                    <img src="img/product/1.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
-
-                <div class="col-lg-7">
-                  <h3>Попперс Angel</h3>
-                  <p>Мягкий по действию, более прододолasdasdasdasdasasdasdasdasdasdadasdasdasdasdasdжительный эффодолasdasdasdasdasdasdasdasdasdasdжительный эффолжительный эффект по времениМягкий по действию, более продолжительный эффект по времени</p>
-                  <div class="product-options">
-                    <i class="fas fa-bolt"></i>
-                    ••<span>•</span>
-                    <i class="fas fa-clock"></i>
-                    •<span>•</span><span>•</span>
-                  </div>
-                  <form>
-                    <div class="product-prop">
-                      <ul>
-                        <li>Ёмкость:</li>
-                        <li>Кол-во:</li>
-                        <li>Цена:</li>
-                      </ul>
-                      <ul class="actions">
-                        <li><a>5мл</a><a>15мл</a><a>30мл</a></li>
-                        <li><input type="number"></li>
-                        <li><span>12 679р</span></li>
-                      </ul>
-                    </div>
-                    <div class="text-center">
-                      <button class="red-btn">Купить</button>
-                    </div>
-                  </form>
+                <div class="item">
+                  <a href="img/product/2.png" class="image-link">
+                    <img src="img/product/2.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/3.png" class="image-link">
+                    <img src="img/product/3.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
               </div>
+
+              <h3>Попперс Angel</h3>
+              <p>Мягкий по действию, более продолжительный эффект по времени Мягкий по действию, более продолжительный эффект
+                по времени</p>
+
+              <div class="options">
+                <i class="fas fa-bolt"></i>
+                ••
+                <span>•</span>
+                <i class="fas fa-clock"></i>
+                •
+                <span>•</span>
+                <span>•</span>
+              </div>
+              <form action="#" id="product-add">
+                <ul class="properties">
+                  <li>
+                    <i>Ёмкость:</i>
+                    <div class="first-property">
+                      <a id="five">5мл</a>
+                      <a id="fifteen">15мл</a>
+                      <a id="thirty">30мл</a>
+                    </div>
+                  </li>
+                  <li class="second-property">
+                    <i>Кол-во:</i>
+                    <div class="quantity">
+                      <div class="dec">-</div>
+                      <input type="number" value="1">
+                      <div class="inc">+</div>
+                    </div>
+                  </li>
+                  <li class="third-property">
+                    <i>Цена:</i>
+                    <div class="price">16 977р</div>
+                  </li>
+                </ul>
+
+                <div class="text-center">
+                  <button class="red-btn">В корзину</button>
+                </div>
+              </form>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-lg-4 product-margin">
             <div class="product">
-              <div class="row">
-                <div class="col-lg-5">
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-md-4">
-                      <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/2.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/3.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                  </div>
+              <div class="owl-carousel product-imgs">
+                <div class="item">
+                  <a href="img/product/1.png" class="image-link">
+                    <img src="img/product/1.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
-
-                <div class="col-lg-7">
-                  <h3>Попперс Angel</h3>
-                  <p>Мягкий по действию, более продолжитеродолжительный эффект продолжительный эффект продолжительный эффект пльный эффект по времени</p>
-                  <div class="product-options">
-                    <i class="fas fa-bolt"></i>
-                    ••<span>•</span>
-                    <i class="fas fa-clock"></i>
-                    •<span>•</span><span>•</span>
-                  </div>
-                  <form>
-                    <div class="product-prop">
-                      <ul>
-                        <li>Ёмкость:</li>
-                        <li>Кол-во:</li>
-                        <li>Цена:</li>
-                      </ul>
-                      <ul class="actions">
-                        <li><a>5мл</a><a>15мл</a><a>30мл</a></li>
-                        <li><input type="number"></li>
-                        <li><span>12 679р</span></li>
-                      </ul>
-                    </div>
-                    <div class="text-center">
-                      <button class="red-btn">Купить</button>
-                    </div>
-                  </form>
+                <div class="item">
+                  <a href="img/product/2.png" class="image-link">
+                    <img src="img/product/2.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/3.png" class="image-link">
+                    <img src="img/product/3.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
               </div>
+
+              <h3>Попперс Angel</h3>
+              <p>Мягкий по действию, более продолжительный эффект по времени Мягкий по действию, более продолжительный эффект
+                по времени</p>
+
+              <div class="options">
+                <i class="fas fa-bolt"></i>
+                ••
+                <span>•</span>
+                <i class="fas fa-clock"></i>
+                •
+                <span>•</span>
+                <span>•</span>
+              </div>
+              <form action="#" id="product-add">
+                <ul class="properties">
+                  <li>
+                    <i>Ёмкость:</i>
+                    <div class="first-property">
+                      <a id="five">5мл</a>
+                      <a id="fifteen">15мл</a>
+                      <a id="thirty">30мл</a>
+                    </div>
+                  </li>
+                  <li class="second-property">
+                    <i>Кол-во:</i>
+                    <div class="quantity">
+                      <div class="dec">-</div>
+                      <input type="number" value="1">
+                      <div class="inc">+</div>
+                    </div>
+                  </li>
+                  <li class="third-property">
+                    <i>Цена:</i>
+                    <div class="price">16 977р</div>
+                  </li>
+                </ul>
+
+                <div class="text-center">
+                  <button class="red-btn">В корзину</button>
+                </div>
+              </form>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-lg-4 product-margin">
             <div class="product">
-              <div class="row">
-                <div class="col-lg-5">
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-md-4">
-                      <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/2.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/3.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                  </div>
+              <div class="owl-carousel product-imgs">
+                <div class="item">
+                  <a href="img/product/1.png" class="image-link">
+                    <img src="img/product/1.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
-
-                <div class="col-lg-7">
-                  <h3>Попперс Angel</h3>
-                  <p>Мягкий по действию, более продолжительный эффект по времени</p>
-                  <div class="product-options">
-                    <i class="fas fa-bolt"></i>
-                    ••<span>•</span>
-                    <i class="fas fa-clock"></i>
-                    •<span>•</span><span>•</span>
-                  </div>
-                  <form>
-                    <div class="product-prop">
-                      <ul>
-                        <li>Ёмкость:</li>
-                        <li>Кол-во:</li>
-                        <li>Цена:</li>
-                      </ul>
-                      <ul class="actions">
-                        <li><a>5мл</a><a>15мл</a><a>30мл</a></li>
-                        <li><input type="number"></li>
-                        <li><span>12 679р</span></li>
-                      </ul>
-                    </div>
-                    <div class="text-center">
-                      <button class="red-btn">Купить</button>
-                    </div>
-                  </form>
+                <div class="item">
+                  <a href="img/product/2.png" class="image-link">
+                    <img src="img/product/2.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/3.png" class="image-link">
+                    <img src="img/product/3.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
               </div>
+
+              <h3>Попперс Angel</h3>
+              <p>Мягкий по действию, более продолжительный эффект по времени Мягкий по действию, более продолжительный эффект
+                по времени</p>
+
+              <div class="options">
+                <i class="fas fa-bolt"></i>
+                ••
+                <span>•</span>
+                <i class="fas fa-clock"></i>
+                •
+                <span>•</span>
+                <span>•</span>
+              </div>
+              <form action="#" id="product-add">
+                <ul class="properties">
+                  <li>
+                    <i>Ёмкость:</i>
+                    <div class="first-property">
+                      <a id="five">5мл</a>
+                      <a id="fifteen">15мл</a>
+                      <a id="thirty">30мл</a>
+                    </div>
+                  </li>
+                  <li class="second-property">
+                    <i>Кол-во:</i>
+                    <div class="quantity">
+                      <div class="dec">-</div>
+                      <input type="number" value="1">
+                      <div class="inc">+</div>
+                    </div>
+                  </li>
+                  <li class="third-property">
+                    <i>Цена:</i>
+                    <div class="price">16 977р</div>
+                  </li>
+                </ul>
+
+                <div class="text-center">
+                  <button class="red-btn">В корзину</button>
+                </div>
+              </form>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-lg-4 product-margin">
             <div class="product">
-              <div class="row">
-                <div class="col-lg-5">
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-md-4">
-                      <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/2.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/3.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                  </div>
+              <div class="owl-carousel product-imgs">
+                <div class="item">
+                  <a href="img/product/1.png" class="image-link">
+                    <img src="img/product/1.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
-
-                <div class="col-lg-7">
-                  <h3>Попперс Angel</h3>
-                  <p>Мягкий по действию, более продолжительный эффект по времени</p>
-                  <div class="product-options">
-                    <i class="fas fa-bolt"></i>
-                    ••<span>•</span>
-                    <i class="fas fa-clock"></i>
-                    •<span>•</span><span>•</span>
-                  </div>
-                  <form>
-                    <div class="product-prop">
-                      <ul>
-                        <li>Ёмкость:</li>
-                        <li>Кол-во:</li>
-                        <li>Цена:</li>
-                      </ul>
-                      <ul class="actions">
-                        <li><a>5мл</a><a>15мл</a><a>30мл</a></li>
-                        <li><input type="number"></li>
-                        <li><span>12 679р</span></li>
-                      </ul>
-                    </div>
-                    <div class="text-center">
-                      <button class="red-btn">Купить</button>
-                    </div>
-                  </form>
+                <div class="item">
+                  <a href="img/product/2.png" class="image-link">
+                    <img src="img/product/2.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/3.png" class="image-link">
+                    <img src="img/product/3.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
               </div>
+
+              <h3>Попперс Angel</h3>
+              <p>Мягкий по действию, более продолжительный эффект по времени Мягкий по действию, более продолжительный эффект
+                по времени</p>
+
+              <div class="options">
+                <i class="fas fa-bolt"></i>
+                ••
+                <span>•</span>
+                <i class="fas fa-clock"></i>
+                •
+                <span>•</span>
+                <span>•</span>
+              </div>
+              <form action="#" id="product-add">
+                <ul class="properties">
+                  <li>
+                    <i>Ёмкость:</i>
+                    <div class="first-property">
+                      <a id="five">5мл</a>
+                      <a id="fifteen">15мл</a>
+                      <a id="thirty">30мл</a>
+                    </div>
+                  </li>
+                  <li class="second-property">
+                    <i>Кол-во:</i>
+                    <div class="quantity">
+                      <div class="dec">-</div>
+                      <input type="number" value="1">
+                      <div class="inc">+</div>
+                    </div>
+                  </li>
+                  <li class="third-property">
+                    <i>Цена:</i>
+                    <div class="price">16 977р</div>
+                  </li>
+                </ul>
+
+                <div class="text-center">
+                  <button class="red-btn">В корзину</button>
+                </div>
+              </form>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-lg-4 product-margin">
             <div class="product">
-              <div class="row">
-                <div class="col-lg-5">
-                  <div class="row">
-                    <div class="col-4 col-md-12 col-md-4">
-                      <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/2.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                    <div class="col-4 col-md-6 col-md-4">
-                      <img src="img/product/3.png" alt="Изображение продукта" class="img-responsive img-width">
-                    </div>
-                  </div>
+              <div class="owl-carousel product-imgs">
+                <div class="item">
+                  <a href="img/product/1.png" class="image-link">
+                    <img src="img/product/1.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
-
-                <div class="col-lg-7">
-                  <h3>Попперс Angel</h3>
-                  <p>Мягкий по действию, более продолжительный эффект по времени</p>
-                  <div class="product-options">
-                    <i class="fas fa-bolt"></i>
-                    ••<span>•</span>
-                    <i class="fas fa-clock"></i>
-                    •<span>•</span><span>•</span>
-                  </div>
-                  <form>
-                    <div class="product-prop">
-                      <ul>
-                        <li>Ёмкость:</li>
-                        <li>Кол-во:</li>
-                        <li>Цена:</li>
-                      </ul>
-                      <ul class="actions">
-                        <li><a>5мл</a><a>15мл</a><a>30мл</a></li>
-                        <li><input type="number"></li>
-                        <li><span>12 679р</span></li>
-                      </ul>
-                    </div>
-                    <div class="text-center">
-                      <button class="red-btn">Купить</button>
-                    </div>
-                  </form>
+                <div class="item">
+                  <a href="img/product/2.png" class="image-link">
+                    <img src="img/product/2.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/3.png" class="image-link">
+                    <img src="img/product/3.png" alt="img" class="img-responsive">
+                  </a>
                 </div>
               </div>
+
+              <h3>Попперс Angel</h3>
+              <p>Мягкий по действию, более продолжительный эффект по времени Мягкий по действию, более продолжительный эффект
+                по времени</p>
+
+              <div class="options">
+                <i class="fas fa-bolt"></i>
+                ••
+                <span>•</span>
+                <i class="fas fa-clock"></i>
+                •
+                <span>•</span>
+                <span>•</span>
+              </div>
+              <form action="#" id="product-add">
+                <ul class="properties">
+                  <li>
+                    <i>Ёмкость:</i>
+                    <div class="first-property">
+                      <a id="five">5мл</a>
+                      <a id="fifteen">15мл</a>
+                      <a id="thirty">30мл</a>
+                    </div>
+                  </li>
+                  <li class="second-property">
+                    <i>Кол-во:</i>
+                    <div class="quantity">
+                      <div class="dec">-</div>
+                      <input type="number" value="1">
+                      <div class="inc">+</div>
+                    </div>
+                  </li>
+                  <li class="third-property">
+                    <i>Цена:</i>
+                    <div class="price">16 977р</div>
+                  </li>
+                </ul>
+
+                <div class="text-center">
+                  <button class="red-btn">В корзину</button>
+                </div>
+              </form>
             </div>
           </div>
+
+          <div class="col-md-6 col-lg-4 product-margin">
+            <div class="product">
+              <div class="owl-carousel product-imgs">
+                <div class="item">
+                  <a href="img/product/1.png" class="image-link">
+                    <img src="img/product/1.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/2.png" class="image-link">
+                    <img src="img/product/2.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/product/3.png" class="image-link">
+                    <img src="img/product/3.png" alt="img" class="img-responsive">
+                  </a>
+                </div>
+              </div>
+
+              <h3>Попперс Angel</h3>
+              <p>Мягкий по действию, более продолжительный эффект по времени Мягкий по действию, более продолжительный эффект
+                по времени</p>
+
+              <div class="options">
+                <i class="fas fa-bolt"></i>
+                ••
+                <span>•</span>
+                <i class="fas fa-clock"></i>
+                •
+                <span>•</span>
+                <span>•</span>
+              </div>
+              <form action="#" id="product-add">
+                <ul class="properties">
+                  <li>
+                    <i>Ёмкость:</i>
+                    <div class="first-property">
+                      <a id="five">5мл</a>
+                      <a id="fifteen">15мл</a>
+                      <a id="thirty">30мл</a>
+                    </div>
+                  </li>
+                  <li class="second-property">
+                    <i>Кол-во:</i>
+                    <div class="quantity">
+                      <div class="dec">-</div>
+                      <input type="number" value="1">
+                      <div class="inc">+</div>
+                    </div>
+                  </li>
+                  <li class="third-property">
+                    <i>Цена:</i>
+                    <div class="price">16 977р</div>
+                  </li>
+                </ul>
+
+                <div class="text-center">
+                  <button class="red-btn">В корзину</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
 
 
         </div>
-
-      </div>
     </section>
 
     <section class="discounts" id="discounts">
@@ -389,7 +540,7 @@
           <div class="col-md-4">
             <div class="delivery-item">
               <h2>Срочная доставка</h2>
-              <img src="img/faviсon.png" alt="Изображение доставки">
+              <img src="img/delivery/1.png" alt="Изображение доставки">
               <p>Мы доставим товар удобным для вас способом, курьерской службой или транспортной компанией и в любой город России.</p>
             </div>
           </div>
@@ -397,7 +548,7 @@
           <div class="col-md-4">
             <div class="delivery-item">
               <h2>Курьерская доставка</h2>
-              <img src="img/faviсon.png" alt="Изображение доставки">
+              <img src="img/delivery/2.png" alt="Изображение доставки">
               <p>Мы доставим товар удобным для вас способом, курьерской службой или транспортной компанией и в любой город России.</p>
             </div>
           </div>
@@ -405,7 +556,7 @@
           <div class="col-md-4">
             <div class="delivery-item">
               <h2>транспортная компания</h2>
-              <img src="img/faviсon.png" alt="Изображение доставки">
+              <img src="img/delivery/3.png" alt="Изображение доставки">
               <p>Мы доставим товар удобным для вас способом, курьерской службой или транспортной компанией и в любой город России.</p>
             </div>
           </div>
@@ -478,120 +629,119 @@
         © PoppersMarket.ru 2018
       </div>
     </footer>
-  </div>
-
-  <div class="cart-section">
-    <div class="container">
-      <div class="cart-section-header">
-        <i class="fas fa-times cart-section-close"></i>
-        Корзина
-      </div>
-
-      <div class="products-in-cart">
-
-        <div class="products-in-cart-item">
-
-          <div class="row">
-
-            <div class="col-4">
-              <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-            </div>
-
-            <div class="col-8">
-              <h3>Попперс Angel</h3>
-              <ul>
-                <li>
-                  <i>Ёмкость:</i> 30 мл</li>
-                <li>
-                  <i>Количество:</i> 13 шт</li>
-                <li>
-                  <i>Цена:</i> 1 259р</li>
-              </ul>
-            </div>
-            <button class="products-in-cart-item-delete">Удалить</button>
-          </div>
-
-        </div>
-
-        <div class="products-in-cart-item">
-
-          <div class="row">
-
-            <div class="col-4">
-              <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-            </div>
-
-            <div class="col-8">
-              <h3>Попперс Angel</h3>
-              <ul>
-                <li>
-                  <i>Ёмкость:</i> 30 мл</li>
-                <li>
-                  <i>Количество:</i> 13 шт</li>
-                <li>
-                  <i>Цена:</i> 1 259р</li>
-              </ul>
-            </div>
-            <button class="products-in-cart-item-delete">Удалить</button>
-          </div>
-
-        </div>
-
-        <div class="products-in-cart-item">
-
-          <div class="row">
-
-            <div class="col-4">
-              <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
-            </div>
-
-            <div class="col-8">
-              <h3>Попперс Angel</h3>
-              <ul>
-                <li>
-                  <i>Ёмкость:</i> 30 мл</li>
-                <li>
-                  <i>Количество:</i> 13 шт</li>
-                <li>
-                  <i>Цена:</i> 1 259р</li>
-              </ul>
-            </div>
-            <button class="products-in-cart-item-delete">Удалить</button>
-          </div>
-
-        </div>
-
-      </div>
-
-      <form action="#" class="authorization">
-
-        <div class="authorization-header">Оформление заказа</div>
-        <input type="text" placeholder="Телефон">
-        <p class="red-txt">Пожалуйста, введите свой номер телефона, сайт распознает вас и сделает перерасчет автоматически.</p>
-
-        <div class="text-center">
-          <button class="red-btn">Продолжить</button>
-        </div>
-
-        <!-- <div class="authorization-done">Успешно!</div> -->
-
-      </form>
-
     </div>
 
-    <form action="#" class="checkout">
-
+    <div class="cart-section">
       <div class="container">
-
-        <div class="user">
-          <i class="fas fa-user"></i> Александров Александр Александрович
+        <div class="cart-section-header">
+          <i class="fas fa-times cart-section-close"></i>
+          Корзина
         </div>
 
-        <div class="select" id="delivery-select">
+        <div class="products-in-cart">
+
+          <div class="products-in-cart-item">
+
+            <div class="row">
+
+              <div class="col-4">
+                <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
+              </div>
+
+              <div class="col-8">
+                <h3>Попперс Angel</h3>
+                <ul>
+                  <li>
+                    <i>Ёмкость:</i> 30 мл</li>
+                  <li>
+                    <i>Количество:</i> 13 шт</li>
+                  <li>
+                    <i>Цена:</i> 1 259р</li>
+                </ul>
+              </div>
+              <button class="products-in-cart-item-delete">Удалить</button>
+            </div>
+
+          </div>
+
+          <div class="products-in-cart-item">
+
+            <div class="row">
+
+              <div class="col-4">
+                <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
+              </div>
+
+              <div class="col-8">
+                <h3>Попперс Angel</h3>
+                <ul>
+                  <li>
+                    <i>Ёмкость:</i> 30 мл</li>
+                  <li>
+                    <i>Количество:</i> 13 шт</li>
+                  <li>
+                    <i>Цена:</i> 1 259р</li>
+                </ul>
+              </div>
+              <button class="products-in-cart-item-delete">Удалить</button>
+            </div>
+
+          </div>
+
+          <div class="products-in-cart-item">
+
+            <div class="row">
+
+              <div class="col-4">
+                <img src="img/product/1.png" alt="Изображение продукта" class="img-responsive img-width">
+              </div>
+
+              <div class="col-8">
+                <h3>Попперс Angel</h3>
+                <ul>
+                  <li>
+                    <i>Ёмкость:</i> 30 мл</li>
+                  <li>
+                    <i>Количество:</i> 13 шт</li>
+                  <li>
+                    <i>Цена:</i> 1 259р</li>
+                </ul>
+              </div>
+              <button class="products-in-cart-item-delete">Удалить</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <form action="#" class="authorization">
+
+          <div class="authorization-header">Оформление заказа</div>
+          <input type="text" placeholder="Телефон" id="phone">
+          <p class="red-txt">Пожалуйста, введите свой номер телефона, сайт распознает вас и сделает перерасчет автоматически.</p>
+
+          <div class="text-center">
+            <button class="red-btn">Продолжить</button>
+          </div>
+
+          <!-- <div class="authorization-done">Успешно!</div> -->
+
+        </form>
+
+      </div>
+
+      <form action="#" class="checkout">
+
+        <div class="container">
+
+          <div class="user">
+            <i class="fas fa-user"></i> Александров Александр Александрович
+          </div>
+
           <select>
-            <option value="delivery-one">Срочная доставка</option>
-            <option value="delivery-two">Курьерская доставка</option>
-            <option value="delivery-three">Транспортная компания</option>
+            <option>Срочная доставка</option>
+            <option>Курьерская доставка</option>
+            <option>Транспортная компания</option>
           </select>
           <div class="select-info" id="delivery-select-info">
             Мы передадим ваш заказ в заданную вами транспортную компанию или курьерскую службу
@@ -602,71 +752,69 @@
               Закажите ещё на 600р и данная доставка будет для вас бесплатной!
             </div>
           </div>
-        </div>
-
-        <div class="select" id="pay-select">
           <select>
-            <option value="one">Наличными при получении</option>
-            <option value="two">Онлайн оплата банковской картой</option>
-            <option value="three">Яндекс.Деньги</option>
+            <option>Наличными при получении</option>
+            <option>Онлайн банковской картой</option>
+            <option>Яндекс.Деньги</option>
           </select>
           <div class="select-info" id="pay-select-info">
             После оформления заказа, вы будете переадресованы на страницу оплаты Яндекс.Касса
           </div>
+
+          <div class="promocode">
+            <div class="row no-gutters">
+
+              <div class="col-9">
+
+                <input type="text" placeholder="Промокод">
+
+              </div>
+
+              <div class="col-3">
+
+                <button>Применить</button>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="discount-info">
+            Ваша скидка
+            <span>0%</span> для получения скидки
+            <span>5%</span> вам осталось приобрести товара на 1300р
+            <i class="fas fa-question-circle"></i>
+          </div>
+
         </div>
 
-        <div class="promocode">
-          <div class="row no-gutters">
-
-            <div class="col-9">
-
-              <input type="text" placeholder="Промокод">
-
-            </div>
-
-            <div class="col-3">
-
-              <button>Применить</button>
-
-            </div>
-
+        <div class="total">
+          <div class="container">
+            <ul>
+              <li>
+                <i>Товары на сумму::</i> 12 638р</li>
+              <li>
+                <i>Скидка:</i> 38р</li>
+              <li>
+                <i>Доставка:</i> Бесплатно</li>
+              <li>
+                <i>ИТОГО К ОПЛАТЕ:</i> 12600р</li>
+            </ul>
           </div>
         </div>
-        <div class="discount-info">
-          Ваша скидка
-          <span>0%</span> для получения скидки
-          <span>5%</span> вам осталось приобрести товара на 1300р
-          <i class="fas fa-question-circle"></i>
+
+        <div class="text-center">
+          <button class="red-btn">Оформить заказ</button>
         </div>
 
-      </div>
+      </form>
 
-      <div class="total">
-        <div class="container">
-          <ul>
-            <li>
-              <i>Товары на сумму::</i> 12 638р</li>
-            <li>
-              <i>Скидка:</i> 38р</li>
-            <li>
-              <i>Доставка:</i> Бесплатно</li>
-            <li>
-              <i>ИТОГО К ОПЛАТЕ:</i> 12600р</li>
-          </ul>
-        </div>
-      </div>
+    </div>
 
-      <div class="text-center">
-        <button class="red-btn">Оформить заказ</button>
-      </div>
-
-    </form>
-
-  </div>
-
-  <script src="libs/jquery/dist/jquery.min.js"></script>
-  <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="js/common.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
