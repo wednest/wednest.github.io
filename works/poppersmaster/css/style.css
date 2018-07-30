@@ -1803,12 +1803,10 @@ input, textarea, button, select {
     .topbar-logo span {
       display: block;
       font-size: 12px;
-      letter-spacing: .074em;
-      color: #646464; }
-    .topbar-logo-addtext {
+      color: #646464;
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 12px;
-      letter-spacing: .05em; }
+      letter-spacing: .03em; }
   .topbar-nav ul li {
     display: inline-block;
     margin: 0 15px; }
@@ -2106,6 +2104,7 @@ input, textarea, select {
   background: #c90c0b; }
 
 .owl-carousel.main {
+  background: url("../img/slider-bg.svg") bottom;
   background-size: 100% 100%; }
   .owl-carousel.main .item {
     height: 710px;
