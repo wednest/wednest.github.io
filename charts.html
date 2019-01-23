@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title>Top 100 AI Leaders in Drug Discovery and Advanced Healthcare</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="static/style.css">
+        <script src="static/Chart.bundle.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+        <div class="unsupported-browser">
+            This page does not fully support your browser.  Please get a
+            better browser (Firefox or Chrome, or if you must use Internet Explorer, make it version 9 or greater).
+        </div>
+        <![endif]-->
+        <div id="main">
+            <h1>Top 100 AI Leaders in Drug Discovery and Advanced Healthcare</h1>
+            <p style="text-align: center"><a href="index.html">&larr; Top 100 AI Leaders</a></p>
+            <div style="overflow: hidden;">
+                <div id="chart1-block" class="chart-block">
+                    <h3>Organization Type</h3>
+                </div>
+                
+                <div id="chart2-block" class="chart-block">
+                    <h3>Primary Impact on the Industry</h3>
+                </div>
+                
+                
+                <div id="chart3-block" class="chart-block">
+                    <h3>Primary Role in the Organization</h3>
+                </div>
+                
+                <div id="chart4-block" class="chart-block">
+                    <h3>Distribution by Primary Competency</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="static/d3.v5.min.js"></script>
+        <script src="static/pie_charts.js"></script>
+        
+        <script type="text/javascript">
+            window.onload = function() {
+                generateChart('chart1-block', [
+                    {name: "Academia", value: 43},
+                    {name: "AI Companies", value: 30},
+                    {name: "Pharma Corporations", value: 15},
+                    {name: "Tech Corporations", value: 7},
+                    {name: "Other", value: 5},
+                ]);
+                
+                generateChart('chart2-block', [
+                    {name: "Science and Tech Innovators", value: 57},
+                    {name: "AI Popularizators", value: 55},
+                    {name: "Community builders", value: 32}
+                ]);
+                
+                generateChart('chart3-block', [
+                    {name: "Business", value: 37},
+                    {name: "Scientific", value: 63}
+                ]);
+                
+                generateChart('chart4-block', [
+                    {name: "AI Research/Technology", value: 72},
+                    {name: "Life Sciences Research/Technology", value: 57},
+                    {name: "Business Roles", value: 26}
+                ]);
+            };
+        </script>
+    </body>
+</html>
+

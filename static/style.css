@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #313964;
+}
+
+h1 {
+    margin-top: 10px;
+}
+td, th {
+    padding: 5px;
+}
+a, a:visited, a:link {
+    color: #1AB07B;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: #1ecd8f;
+}
+
+.red  {
+    color: #E44033;
+}
+.green {
+    color: #1AB07B;
+}
+.green-bg, a.green-bg {
+    color: white;
+    background-color: #1AB07B;
+}
+.btn {
+    line-height: 1;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn.green-bg:hover {
+    background-color: #18a170;
+}
+
+
+#main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#svg-container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+
+
+/* --------- SVG styles ---------- */
+
+#list-box {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    border: none;
+}
+.title {
+    fill: #E44033;
+}
+
+.cat-text {
+    fill: white;
+}
+.cat-point {
+    stroke: white;
+    stroke-width: 1px;
+    fill: #313964;
+}
+.person {
+    
+}
+.person-bg {
+    fill: white;
+    opacity: 0.33;
+}
+.person-text {
+    fill: white;
+}
+
+.rel-point {
+    fill: #17abff;
+    stroke: white;
+    stroke-width: 1px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.rel-path {
+    fill: none;
+    stroke: #17abff;
+    stroke-width: 1px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.active .rel-point, 
+.active .rel-path, 
+.active .person-bg {
+    opacity: 1;
+}
+.active .cat-point, 
+.active .cat-text, 
+.active .person-bg, 
+.selected .cat-point, 
+.selected .cat-text {
+    fill: #17abff;
+}
+.arrow {
+    stroke: white;
+    stroke-width: 0.5em;
+    opacity: 0.33;
+    fill: transparent;
+    cursor: pointer;
+}
+.arrow-bg {
+    fill: transparent;
+    cursor: pointer;
+}
+#btn-previous:hover .arrow, #btn-next:hover .arrow {
+    opacity: 1;
+}
+.disabled {
+    display: none;
+}
+/* ----- END of SVG styles ----- */
+
+
+/* -------- Details block -------- */
+
+.show-details #main,
+.show-details #list-box {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.show-details #details-container {
+    display: block;
+}
+
+#details-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#details-container .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#details {
+    background: #ffffff;
+    overflow: hidden;
+    clear: both;
+    font-size: 14px;
+    line-height: 1.2;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    padding: 0;
+    margin-left: -20em;
+    box-shadow: 0 0 9px -1px #000;
+    max-width: calc(100% - 20px);
+    width: 40em;
+    border-radius: 0.5em;
+}
+.details-header {
+    padding: 26px 3em 20px;
+    text-align: center;
+    border-bottom: 1px #e0e0e0 solid;
+}
+.details-header h3 {
+    color: #17abff;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+.details-body {
+    padding: 20px 3em;
+    text-align: left;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+.close {
+    position: absolute;
+    right: 0.667em;
+    top: 26px;
+    font-size: 3em;
+    line-height: 0.5;
+    color: #999;
+    cursor: pointer;
+}
+.close:hover {
+    color: black;
+}
+
+.label {
+    font-size: 12px;
+    color: #999999;
+    padding-right: 10px;
+}
+
+/* ------ END of Details block ------- */
+
+
+/* ---------- CHARTS page ----------- */
+
+.chart-block {
+    width: calc(50% - 0.25em);
+    min-width: 360px;
+    display: inline-block;
+    vertical-align: top;
+}
+.chart-block h3 {
+    color: #E44033;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+
+.pie {
+    width: 100%;
+    height: auto;
+}
+.legend-text {
+    fill: white;
+    opacity: 0.5;
+    cursor: default;
+}
+.legend-text:hover {
+    opacity: 0.8;
+}
+.ring-outer {
+    stroke: #313964;
+    /*stroke: white;*/
+    fill: none;
+    opacity: 0.75;
+}
+.ring-inner {
+    stroke: #313964;
+    /*stroke: black;*/
+    fill: none;
+    opacity: 0.2;
+}
+
+.chart-label {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.show.chart-label {
+    opacity: 1;
+}
+
+.label-text {
+    fill: white;
+}
+.label-bg {
+    fill: white;
+    opacity: 0.3;
+}
+.label-line {
+    fill: none;
+    stroke-width: 3;
+}
+.label-point {
+    stroke: white;
+    stroke-width: 2;
+}
+
