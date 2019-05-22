@@ -1,85 +1,242 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta charset="utf-8">
-        <title>Top 100 AI Leaders in Drug Discovery and Advanced Healthcare</title>
-        <meta name="description" content="">
-        <link rel="stylesheet" href="static/style.css">
-    </head>
-    <body id="body">
-        <!--[if lt IE 9]>
-        <div class="unsupported-browser">
-            This website does not fully support your browser.  Please get a
-            better browser (Firefox or Chrome, or if you must use Internet Explorer, make it version 9 or greater).
-        </div>
-        <![endif]-->
-        <div id="main">
-            <h1></h1>
-            <p style="text-align: center">
-                <a href="charts.html" class="green-bg btn">View Charts &rarr;</a>
-            </p>
-        </div>
-        
-        <div id="svg-container" style="text-align: center;">
-            <svg id="list-box" viewBox="-800 -576 1600 1152">
-                <defs>
-                    <radialGradient id="gbgCenter">
-                        <stop offset="0%" stop-color="#52597B" />
-                        <stop offset="35%" stop-color="#5C6384" />
-                        <stop offset="50%" stop-color="#596082" />
-                        <stop offset="80%" stop-color="#4A5277" />
-                        <stop offset="100%" stop-color="#374069" />
-                    </radialGradient>
-                    
-                    <radialGradient id="gbgBack">
-                        <stop offset="50%" stop-color="#5C6384" />
-                        <stop offset="100%" stop-color="transparent" />
-                    </radialGradient>
-                </defs>
-                <circle cx="0" cy="0" r="576" stroke="none" fill="url(#gbgBack)" />
-                <circle cx="0" cy="0" r="440" stroke="#374069" stroke-width="1" fill="url(#gbgCenter)" />
-                <g id="list-group"></g>
-                <g id="paths-group"></g>
-                <g id="cats-group"></g>
-                
-                <g id="btn-previous">
-                    <rect x="-100" y="-535" width="200" height="45" fill="transparent" class="arrow-bg" />
-                    <path d="M -100 -500 l 100 -20, 100 20" class="arrow" />
-                </g>
-                <g id="btn-next">
-                    <rect x="-100" y="490" width="200" height="45" fill="transparent" class="arrow-bg" />
-                    <path d="M -100 500 l 100 20, 100 -20" class="arrow" />
-                </g>
-                
-            </svg>
-            
-        </div>
-        <div id="details-container">
-            <div class="back" onclick="document.getElementById('body').classList.remove('show-details');"></div>
-            <div id="details">
-                <div class="close" onclick="document.getElementById('body').classList.remove('show-details');">&times;</div>
-                <div class="details-header">
-                    <h3></h3>
-                </div>
-                <div class="details-body">
-                    <table border="0"><tbody>
-                    
-                    </tbody></table>
-                </div>
-            </div>
-        </div>
-        
-        <script src="static/d3.v5.min.js"></script>
-        <script src="static/main_with_json.js"></script>
-        <script type="text/javascript">
-            window.onload = function() {
-                init();
-            };
-        </script>
-    </body>
-</html>
+<html lang="ru">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zeal - Даниил Портфолио</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/faviсon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <!-- Libs styles -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- <div class="menu-section">
+    <a href="#home">Главная</a>
+    <a href="#why-my">Почему я?</a>
+    <a href="#services">Услуги</a>
+    <a href="#works">Примеры работ</a>
+    <a href="#contact">Связаться</a>
+    <a href="#main-form">Форма заявки</a>
+  </div> -->
+
+  <section class="start" id="home">
+    <div class="topbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#home" class="topbar-logo">Zeal</a>
+        <div class="topbar-social">
+          <a href="//vk.com/korlya_page">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="skype:live:romanovdaniilalex?add">
+            <i class="fab fa-skype"></i>
+          </a>
+          <a href="//telegram.me/daniyahdai">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <a href="mailto:daniyahdai@gmail.com">
+            daniyahdai@gmail.com
+          </a>
+        </div>
+        <!-- <div class="topbar-burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div> -->
+        <a href="#contact" class="write-btn">Связаться</a>
+      </div>
+    </div>
+
+    <div class="start-desc container d-flex flex-column justify-content-center">
+      <h1>Создание дизайна и адаптивная вёрстка сайта</h1>
+      <a href="#why-my" class="button align-self-center">Подробнее</a>
+    </div>
+
+  </section>
+
+  <section class="why-my" id="why-my">
+    <div class="container">
+      <h1>Почему я?</h1>
+      <p>Меня зовут, Даниил. Занимаюсь дизайном и вёрсткой сайтов. Выполнил более 30 проектов. Взявшись за проект, гарантирую качественное
+        выполнение и сдачу проекта в оговореные сроки.</p>
+      <h2>Мои преимущества перед:</h2>
+      <div class="row d-flex">
+        <div class="col-12 col-md-4">
+          <div class="why-my-item">
+            <h3>Фрилансеры</h3>
+            <p>Срывают сроки и не дают гарантию на качество своих услуг. Трудно найти хорошего специалиста.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="why-my-item">
+            <h3>Web-студии</h3>
+            <p>Зачастую это их не основные услуги, поэтому берутся за работу неохотно, делают долго и дорого.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="why-my-item">
+            <h3>Работники</h3>
+            <p>Требуется потратить время на поиск хороших сотрудников, организовать рабочий процесс и ежемесячно оплачивать.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="sentence">
+    <div class="container">
+      <h1>Оценка стоимости проекта</h1>
+      <p>Хотите быстро узнать стоимость и сроки? Тогда отправьте заявку и получите расчет в течении часа</p>
+      <a href="#" class="button">Отправить заявку</a>
+    </div>
+  </section> -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <h1>Услуги</h1>
+      <div class="row d-flex">
+        <div class="col-12 col-md-4">
+          <div class="services-item">
+            <img src="img/services/1.svg" alt>
+            <h3>Веб-дизайн</h3>
+            <p>Построю визуальную иерархию и расставлю акценты</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-item">
+            <img src="img/services/2.svg" alt>
+            <h3>Адаптивная верстка</h3>
+            <p>Верстаю сайты с отличным отображением на любом устройстве</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-item">
+            <img src="img/services/3.svg" alt>
+            <h3>Оптимизация скорости</h3>
+            <p>Оптимизирую вес изображений и число строчек кода</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-item">
+            <img src="img/services/4.svg" alt>
+            <h3>UX-дизайн</h3>
+            <p>Создаю удобный и понятный для пользователя интерфейс</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-item">
+            <img src="img/services/5.svg" alt>
+            <h3>Анимации элементов</h3>
+            <p>Реализую любые ваши идеи. Паралакс, галереи и т.д.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-item">
+            <img src="img/services/6.svg" alt>
+            <h3>Минимум изображений</h3>
+            <p>Все, что может быть сверстано кодом, будет сверстано кодом</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="container">
+      <h1>Несколько работ</h1>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a class="works-item">
+            <img src="img/works/1.png" alt="Lian">
+            <div class="works-item-mini-desc">Сайт-портфолио</div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a class="works-item">
+            <img src="img/works/2.png" alt="Poppers Market">
+            <div class="works-item-mini-desc">Одностраничный магазин</div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a class="works-item">
+            <img src="img/works/3.png" alt="Popopt">
+            <div class="works-item-mini-desc">Продажа оптом</div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a class="works-item">
+            <img src="img/works/4.png" alt="TO Холодильник">
+            <div class="works-item-mini-desc">Интернет-магазин</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="main-form" id="main-form">
+    <div class="container">
+      <h1>Заявка для расчёта стоимости</h1>
+      <form action="#">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="main-form-input-title">Ваше имя</div>
+            <input type="text">
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="main-form-input-title">Skype, Telegram, Email</div>
+            <input type="text">
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="main-form-input-title">Ссылка на файлы проекта</div>
+            <input type="text">
+          </div>
+          <div class="col-12">
+              <div class="main-form-input-title comment">Комментарии</div>
+              <input type="textarea">
+          </div>
+        </div>
+      </form>
+      <a href="#" class="button">Отправить</a>
+    </div>
+  </section> -->
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <p>Связаться со мной можете по одной из следующих ссылок:</p>
+      <a href="//vk.com/korlya_page" class="contact-item">
+        <i class="fab fa-vk"></i>
+        /korlya_page
+      </a>
+      <a href="skype:live:romanovdaniilalex?add" class="contact-item">
+        <i class="fab fa-skype"></i>
+        live:romanovdaniilalex
+      </a>
+      <a href="//telegram.me/daniyahdai" class="contact-item">
+        <i class="fab fa-telegram-plane"></i>
+        @daniyahdai
+      </a>
+      <a href="mailto:daniyahdai@gmail.com" class="contact-item">
+        <i class="fas fa-at"></i>
+        daniyahdai@gmail.com
+      </a>
+      <a href="https://www.fl.ru/users/Sutemi9104/" class="contact-item fl">
+        <i>FL.RU</i>
+        Sutemi9104
+      </a>
+    </div>
+  </section>
+
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>
