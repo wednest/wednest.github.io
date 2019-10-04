@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TOstiralka — вопрос-ответ</title>
+  
+  <!-- Theme colors -->
+  <meta name="theme-color" content="#2980b9">
+  <meta name="msapplication-TileColor" content="#2980b9">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#2980b9">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Open+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Mobile swipe menu -->
+  <div id="menu" class="swipe-menu">
+    <div class="swipe-menu__row">
+      <div class="change-city">
+        <span>Ваш город:</span>
+        <a class="change-city__link" href="#modal_city" data-toggle="modal">Москва</a>
+      </div>
+    </div>
+    <div class="swipe-menu__row">
+      <div class="phone-callback">
+        <a class="phone-callback__num" href="tel:88007751233">8 800 775 12 34</a>
+        <a class="phone-callback__link" href="#modal_callback" data-toggle="modal">Заказать звонок</a>
+      </div>
+    </div>
+    <div class="swipe-menu__row">
+      <form class="search">
+        <input class="search__input default-input" type="search" placeholder="Модель стиральной машины">
+        <button class="search__btn" type="submit"></button>
+      </form>
+    </div>
+    <ul class="swipe-menu__nav">
+      <li>
+        <a class="swipe-menu__nav-link" href="repair.html">Ремонт</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="install.html">Установка</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="price.html">Цены и скидки</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="guarantee.html">Гарантия</a>
+      </li>
+      <li>
+        <span class="swipe-menu__nav-link swipe-menu__nav-link_active">Вопрос-ответ</span>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="about.html">О компании</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Page content -->
+  <div id="panel">
+    
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <div class="header__main row align-items-center">
+          <a class="logo col-9 col-lg-3" href="/">
+            <img class="logo__img" src="img/header/logo.svg" alt="ТОстиралка">
+          </a>
+          <div class="col-lg-2 d-none d-lg-block">
+            <div class="change-city">
+              <span>Ваш город:</span>
+              <a class="change-city__link" href="#modal_city" data-toggle="modal">Москва</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="phone-callback">
+              <a class="phone-callback__num" href="tel:88007751233">8 800 775 12 34</a>
+              <a class="phone-callback__link" href="#modal_callback" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <form class="search">
+              <input class="search__input default-input" type="search" placeholder="Модель стиральной машины">
+              <button class="search__btn" type="submit"></button>
+            </form>
+          </div>
+          <div class="col-3 d-lg-none">
+            <button class="swipe-btn" type="button"></button>
+          </div>
+        </div>
+        <ul class="header__nav d-none d-lg-table">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="repair.html">Ремонт</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="install.html">Установка</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="price.html">Цены и скидки</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="guarantee.html">Гарантия</a>
+          </li>
+          <li class="header__nav-item header__nav-item_active">
+            <span class="header__nav-link">Вопрос-ответ</span>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="about.html">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro section section_bottom-small container">
+      <h1 class="intro__title">Отвечаем на Ваши вопросы</h1>
+      <div class="intro__lead">Мы готовы разрешить Ваши проблемы</div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq section container">
+      <div class="faq__item">
+        <div class="faq__title">Что делать, если постоянно горит одна из лампочек на панели?</div>
+        <div class="faq__content">
+          <div class="faq__content-inner">Если белье в стиральной машине не отжимается, это говорит о возможной необходимости ремонта агрегата. Но, зачастую, дело может быть отнюдь не в серьезных поломках. Итак, рассмотрим некоторые возможные причины неисправности. Первое, что нужно сделать, - это убедиться, не выбрали ли Вы режим «без отжима». Если нет, то следует проверить выставленное количество оборотов при отжиме. Иногда именно недостаточное количество оборотов является причиной «отказа» машинки отжимать белье. Также самостоятельно можно проверить, не застаивается ли в барабане вода. Вполне может быть, что где-то образовался засор, и оставшаяся в машинке вода препятствует сушке белья. Если все указанные рекомендации выполнены, а проблема так и не выявлена, то лучше обратиться к профессиональным мастерам. Возможно, из строя вышел двигатель барабана, электронный модуль или сливной насос. Дело может быть также в неисправностях датчиков уровня воды или контроля оборотов. Это уже более серьезные неполадки, определение которых требует использования специального оборудования и наличия у человека профессиональных навыков.</div>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__title">Что делать, если постоянно горит одна из лампочек на панели?</div>
+        <div class="faq__content">
+          <div class="faq__content-inner">Если белье в стиральной машине не отжимается, это говорит о возможной необходимости ремонта агрегата. Но, зачастую, дело может быть отнюдь не в серьезных поломках. Итак, рассмотрим некоторые возможные причины неисправности. Первое, что нужно сделать, - это убедиться, не выбрали ли Вы режим «без отжима». Если нет, то следует проверить выставленное количество оборотов при отжиме. Иногда именно недостаточное количество оборотов является причиной «отказа» машинки отжимать белье. Также самостоятельно можно проверить, не застаивается ли в барабане вода. Вполне может быть, что где-то образовался засор, и оставшаяся в машинке вода препятствует сушке белья. Если все указанные рекомендации выполнены, а проблема так и не выявлена, то лучше обратиться к профессиональным мастерам. Возможно, из строя вышел двигатель барабана, электронный модуль или сливной насос. Дело может быть также в неисправностях датчиков уровня воды или контроля оборотов. Это уже более серьезные неполадки, определение которых требует использования специального оборудования и наличия у человека профессиональных навыков.</div>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__title">Что делать, если постоянно горит одна из лампочек на панели?</div>
+        <div class="faq__content">
+          <div class="faq__content-inner">Если белье в стиральной машине не отжимается, это говорит о возможной необходимости ремонта агрегата. Но, зачастую, дело может быть отнюдь не в серьезных поломках. Итак, рассмотрим некоторые возможные причины неисправности. Первое, что нужно сделать, - это убедиться, не выбрали ли Вы режим «без отжима». Если нет, то следует проверить выставленное количество оборотов при отжиме. Иногда именно недостаточное количество оборотов является причиной «отказа» машинки отжимать белье. Также самостоятельно можно проверить, не застаивается ли в барабане вода. Вполне может быть, что где-то образовался засор, и оставшаяся в машинке вода препятствует сушке белья. Если все указанные рекомендации выполнены, а проблема так и не выявлена, то лучше обратиться к профессиональным мастерам. Возможно, из строя вышел двигатель барабана, электронный модуль или сливной насос. Дело может быть также в неисправностях датчиков уровня воды или контроля оборотов. Это уже более серьезные неполадки, определение которых требует использования специального оборудования и наличия у человека профессиональных навыков.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order -->
+    <div class="order section section_gradient-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-xl-5 offset-xl-1">
+            <h2 class="order__title">Не тяните с ремонтом техники!</h2>
+            <div class="order__lead">Мы готовы приехать к Вам уже сегодня!</div>
+            <form class="order__form">
+              <div class="row">
+                <div class="col-md">
+                  <input class="order__input default-input" id="orderName" name="orderName" type="text" placeholder="Имя">
+                </div>
+                <div class="col-md">
+                  <input class="order__input default-input" id="orderPhone" name="orderPhone" type="tel" placeholder="Телефон">
+                </div>
+              </div>
+              <button class="default-btn default-btn_block">Отправить заявку</button>
+            </form>
+          </div>
+          <div class="row col-lg-6">
+            <img class="order__img d-none d-xl-block" src="img/order/bg.png" alt="Не тяните с ремонтом техники!">
+            <div class="order__phone">
+              <div class="order__phone-title">Или позвоните нам</div>
+              <a class="order__phone-num" href="tel:88007751234">8 800 775 12 34</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <a class="footer__logo logo" href="/">
+              <img class="logo__img" src="img/footer/logo.svg" alt="ТОстиралка">
+            </a>
+            <a class="footer__link" href="#">Соглашение об обработке персональных данных</a>
+          </div>
+          <ul class="footer__nav footer__row row col-lg-4">
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="repair.html">Ремонт</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <span class="footer__link footer__link_active">Вопрос-ответ</span>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="install.html">Установка</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="about.html">О компании</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="price.html">Цены и скидки</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="guarantee.html">Гарантия</a>
+            </li>
+          </ul>
+          <div class="footer__row col-lg-2">
+            <div class="change-city">
+              <span>Ваш город:</span>
+              <a class="change-city__link" href="#modal_city" data-toggle="modal">Москва</a>
+            </div>
+          </div>
+          <div class="footer__row col-lg-3">
+            <div class="phone-callback">
+              <a class="phone-callback__num" href="tel:88007751233">8 800 775 12 34</a>
+              <a class="phone-callback__link" href="#modal_callback" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal city -->
+  <div class="modal modal-city fade" id="modal_city">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Выберите город</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Москва</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Тюмень</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Краснодар</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Ульяновск</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Саратов</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Пермь</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal callback -->
+  <div class="modal modal-callback fade" id="modal_callback">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Обратный звонок</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="modal-callback__form">
+            <input class="modal-callback__input default-input" id="callbackName" name="callbackName" type="text" placeholder="Имя">
+            <input class="modal-callback__input default-input" id="callbackPhone" name="callbackPhone" type="tel" placeholder="Телефон">
+            <button class="default-btn default-btn_block" type="submit">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideout.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

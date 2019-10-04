@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TOstiralka</title>
+  
+  <!-- Theme colors -->
+  <meta name="theme-color" content="#2980b9">
+  <meta name="msapplication-TileColor" content="#2980b9">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#2980b9">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Open+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Mobile swipe menu -->
+  <div id="menu" class="swipe-menu">
+    <div class="swipe-menu__row">
+      <div class="change-city">
+        <span>Ваш город:</span>
+        <a class="change-city__link" href="#modal_city" data-toggle="modal">Москва</a>
+      </div>
+    </div>
+    <div class="swipe-menu__row">
+      <div class="phone-callback">
+        <a class="phone-callback__num" href="tel:88007751233">8 800 775 12 34</a>
+        <a class="phone-callback__link" href="#modal_callback" data-toggle="modal">Заказать звонок</a>
+      </div>
+    </div>
+    <div class="swipe-menu__row">
+      <form class="search">
+        <input class="search__input default-input" type="search" placeholder="Модель стиральной машины">
+        <button class="search__btn" type="submit"></button>
+      </form>
+    </div>
+    <ul class="swipe-menu__nav">
+      <li>
+        <a class="swipe-menu__nav-link" href="repair.html">Ремонт</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="install.html">Установка</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="price.html">Цены и скидки</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="guarantee.html">Гарантия</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="faq.html">Вопрос-ответ</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="about.html">О компании</a>
+      </li>
+      <li>
+        <a class="swipe-menu__nav-link" href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Page content -->
+  <div id="panel">
+    
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <div class="header__main row align-items-center">
+          <a class="logo col-9 col-lg-3" href="/">
+            <img class="logo__img" src="img/header/logo.svg" alt="ТОстиралка">
+          </a>
+          <div class="col-lg-2 d-none d-lg-block">
+            <div class="change-city">
+              <span>Ваш город:</span>
+              <a class="change-city__link" href="#modal_city" data-toggle="modal">Москва</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="phone-callback">
+              <a class="phone-callback__num" href="tel:88007751233">8 800 775 12 34</a>
+              <a class="phone-callback__link" href="#modal_callback" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <form class="search">
+              <input class="search__input default-input" type="search" placeholder="Модель стиральной машины">
+              <button class="search__btn" type="submit"></button>
+            </form>
+          </div>
+          <div class="col-3 d-lg-none">
+            <button class="swipe-btn" type="button"></button>
+          </div>
+        </div>
+        <ul class="header__nav d-none d-lg-table">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="repair.html">Ремонт</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="install.html">Установка</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="price.html">Цены и скидки</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="guarantee.html">Гарантия</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="faq.html">Вопрос-ответ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="about.html">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="main-intro callback-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-xl-6 offset-xl-1">
+            <h1 class="callback-section__title">Ремонт стиральной машины у Вас дома</h1>
+            <h2 class="callback-section__lead">По разумной цене и с гарантией от профессионала</h2>
+            <div class="main-intro__offer">
+              <img src="img/main-intro/gift.svg" alt="При заказе ремонта стиральной машины чистка от накипи В ПОДАРОК">
+              <div class="main-intro__offer-body">При заказе ремонта стиральной машины чистка от накипи В ПОДАРОК</div>
+            </div>
+          </div>
+          <div class="callback-section__form col-lg-4 col-xl-3">
+            <form class="island-form">
+              <h5 class="island-form__title">Перезвоним через 15 минут</h5>
+              <div class="island-form__input-group">
+                <input class="island-form__input" id="callbackName" name="callbackName" type="text" placeholder="Имя">
+                <input class="island-form__input" id="callbackPhone" name="callbackPhone" type="tel" placeholder="Телефон">
+              </div>
+              <button class="default-btn default-btn_block">Заказать ремонт</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Problems -->
+    <div class="main-problems section container">
+      <h2 class="section__title">Основные поломки и цены на ремонт</h2>
+      <div class="row">
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/1.svg" alt="Не сливается вода, бельё не отжимается">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Не сливается вода, бельё не отжимается</div>
+            <div class="main-problems__price">от 600 руб.</div>
+          </div>
+        </div>
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/2.svg" alt="Шум и вибрация при отжиме">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Шум и вибрация при отжиме</div>
+            <div class="main-problems__price">от 600 руб.</div>
+          </div>
+        </div>
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/3.svg" alt="Не греется вода">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Не греется вода</div>
+            <div class="main-problems__price">от 700 руб.</div>
+          </div>
+        </div>
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/4.svg" alt="Течь из бункера дозатора">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Течь из бункера дозатора</div>
+            <div class="main-problems__price">от 700 руб.</div>
+          </div>
+        </div>
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/5.svg" alt="Барабан не вращается и/или нет отжима">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Барабан не вращается и/или нет отжима</div>
+            <div class="main-problems__price">от 500 руб.</div>
+          </div>
+        </div>
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/6.svg" alt="Выход из строя электронного модуля">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Выход из строя электронного модуля</div>
+            <div class="main-problems__price">от 1 000 руб.</div>
+          </div>
+        </div>
+        <div class="main-problems__item col-md-6 col-xl-5 offset-xl-1">
+          <img src="img/main-problems/7.svg" alt="Вода не поступает в машинку">
+          <div class="main-problems__body">
+            <div class="main-problems__name">Вода не поступает в машинку</div>
+            <div class="main-problems__price">от 400 руб.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parts -->
+    <div class="main-parts section">
+      <div class="container">
+        <div class="main-parts__intro row align-items-center">
+          <div class="col-lg-8 col-xl-6 offset-xl-1">
+            <h2 class="main-parts__title">Запчасти для стиральной машины</h2>
+            <div class="main-parts__text">Если вы диагностировали причину поломки и в состоянии самостоятельно отремонтировать свою стиральную машину, то можете заказать запчать, позвонив по единому номеру телефона или самостоятельно оформить заказ в интернет-магазине</div>
+            <a class="default-btn" href="models.html">Перейти в интернет-магазин</a>
+            <a class="main-parts__phone" href="tel:88007751234">8 800 775 12 34</a>
+          </div>
+          <div class="col-lg-4 col-xl-3 offset-xl-1 d-none d-lg-block">
+            <img src="img/main-parts/intro.png" alt="Запчасти для стиральной машины">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <div class="main-parts__items">
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/1.png" alt="Приводные ремни">
+                <span class="main-parts__name">Приводные ремни</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/2.png" alt="Помпы">
+                <span class="main-parts__name">Помпы</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/3.png" alt="ТЭНы">
+                <span class="main-parts__name">ТЭНы</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/4.png " alt="Подшипники">
+                <span class="main-parts__name">Подшипники</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/5.png " alt="Сальники">
+                <span class="main-parts__name">Сальники</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/6.png " alt="Манжеты">
+                <span class="main-parts__name">Манжеты</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/7.png " alt="Амортизаторы">
+                <span class="main-parts__name">Амортизаторы</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/8.png " alt="Ручки люка">
+                <span class="main-parts__name">Ручки люка</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+              <a class="main-parts__col" href="models.html">
+                <img src="img/main-parts/9.png " alt="Стекла люков">
+                <span class="main-parts__name">Стекла люков</span>
+                <span class="main-parts__price">от 500 руб.</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="main-brands section section_top-small container">
+      <h2 class="section__title">Ремонтируем качественно<br>технику всех известных производителей</h2>
+      <div class="row">
+        <div class="row no-gutters align-items-center col-xl-10 offset-xl-1">
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/1.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/2.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/3.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/4.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/5.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/6.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/7.jpg" alt="">
+          </a>
+          <a class="main-brands__link col-md-3" href="models.html">
+            <img class="main-brands__img" src="img/brands/8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <a class="main-brands__btn default-btn default-btn_outline" href="repair.html">И еще 100+ брендов</a>
+    </div>
+
+    <!-- Install -->
+    <div class="main-install callback-section">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Content -->
+          <div class="col-lg-8 col-xl-6 offset-xl-1">
+            <h1 class="callback-section__title">Профессиональная установка стиральной машины</h1>
+            <h2 class="callback-section__lead">Качественно и по разумной цене</h2>
+          </div>
+
+          <!-- Form -->
+          <div class="callback-section__form col-lg-4 col-xl-3">
+            <form class="island-form">
+              <h5 class="island-form__title">Перезвоним через 15 минут</h5>
+              <div class="island-form__input-group">
+                <input class="island-form__input" id="callbackName" name="callbackName" type="text" placeholder="Имя">
+                <input class="island-form__input" id="callbackPhone" name="callbackPhone" type="tel" placeholder="Телефон">
+              </div>
+              <button class="default-btn default-btn_block">Заказать ремонт</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Process -->
+    <div class="process section section_bottom-small">
+      <div class="container">
+        <h2 class="section__title">Процесс ремонта</h2>
+        <div class="row">
+          <div class="process__item col-sm-6 col-lg-3">
+            <img src="img/process/1.svg" alt="Звонок или заявка">
+            <h4 class="process__title">Звонок или заявка</h4>
+            <div class="process__body">Вы оставляете заявку на вызов мастера в удобное для Вас время</div>
+          </div>
+          <div class="process__item col-sm-6 col-lg-3">
+            <img src="img/process/2.svg" alt="Приезжает мастер">
+            <h4 class="process__title">Приезжает мастер</h4>
+            <div class="process__body">К Вам приезжает Наш специалист и оценивает стоимость ремонта</div>
+          </div>
+          <div class="process__item col-sm-6 col-lg-3">
+            <img src="img/process/3.svg" alt="Производит ремонт">
+            <h4 class="process__title">Производит ремонт</h4>
+            <div class="process__body">Прямо на дому, без транспортировки в мастерскую</div>
+          </div>
+          <div class="process__item col-sm-6 col-lg-3">
+            <img src="img/process/4.svg" alt="Ваша техника готова">
+            <h4 class="process__title">Ваша техника готова</h4>
+            <div class="process__body">Принимаете работу, получаете чек, и гарантию до 2-х лет</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features section section_gradient-bottom">
+      <div class="container">
+        <h2 class="section__title">Выбирают нас потому что мы лучшие других</h2>
+        <div class="features__compare row">
+          <div class="features__col col-lg-6 col-xl-5 offset-xl-1">
+            <h3 class="features__title features__title_positive">Как работаем мы</h3>
+            <ul>
+              <li class="features__row">
+                <span class="features__item features__item_positive">Выезд мастера в удобное Вам время</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_positive">Ремонт в течение 1-го дня у Вас дома</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_positive">Только оригинальные запасные части</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_positive">Опытные мастера с опытом от 5 лет</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_positive">Бесплатная диагностика в случае ремонта</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_positive">Гарантия на ремонт до 2-х лет</span>
+              </li>
+            </ul>
+          </div>
+          <div class="features__col col-lg-6 col-xl-5">
+            <h3 class="features__title features__title_negative">Как работают другие</h3>
+            <ul>
+              <li class="features__row">
+                <span class="features__item features__item_negative">По записи, очередь</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_negative">Ремонт в мастерской, берут плату за доставку</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_negative">Китайские малокачественные аналоги</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_negative">Малоопытные сотрудники</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_negative">Диагностика от 1 000 рублей</span>
+              </li>
+              <li class="features__row">
+                <span class="features__item features__item_negative">Гарантия не более месяца</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="features__bottom row">
+          <div class="col-lg-9 offset-lg-3">
+            <form class="features__form">
+              <h2 class="features__form-title">Вы еще выбираете мастера?</h2>
+              <div class="features__form-lead">Выбор очевиден! Заказывайте ремонт сейчас!</div>
+              <div class="row">
+                <div class="col-md">
+                  <input class="features__input default-input" id="featuresName" name="featuresName" type="text" placeholder="Имя">
+                </div>
+                <div class="col-md">
+                  <input class="features__input default-input" id="featuresPhone" name="featuresPhone" type="tel" placeholder="Телефон">
+                </div>
+                <div class="col-md">
+                  <button class="default-btn default-btn_block">Отправить заявку</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials section container">
+      <h2 class="section__title">Отзывы наших клиентов</h2>
+      <div class="testimonials__item row">
+        <div class="testimonials__author col-xl-2 offset-xl-2">
+          <img class="testimonials__photo" src="https://randomuser.me/api/portraits/women/75.jpg" alt="Мария Степановна">
+          <div class="testimonials__name">Мария Степановна</div>
+          <div class="testimonials__date">08.11.2015</div>
+        </div>
+        <div class="testimonials__body col-xl-6">Обращалась к вам впервые – и не пожалела! Очень приятная девушка в колл-центре. Перезвонили быстро, мастер знает свое дело, все поломки исправил еще и накипь почистил, буду рекомендовать. Отдельное спасибо мастеру, который несмотря на ужасную погоду смог подъехать в тот же день и устранить поломку.</div>
+      </div>
+      <div class="testimonials__item row">
+        <div class="testimonials__author col-xl-2 offset-xl-2">
+          <img class="testimonials__photo" src="https://randomuser.me/api/portraits/women/75.jpg" alt="Мария Степановна">
+          <div class="testimonials__name">Мария Степановна</div>
+          <div class="testimonials__date">08.11.2015</div>
+        </div>
+        <div class="testimonials__body col-xl-6">Обращалась к вам впервые – и не пожалела! Очень приятная девушка в колл-центре. Перезвонили быстро, мастер знает свое дело, все поломки исправил еще и накипь почистил, буду рекомендовать. Отдельное спасибо мастеру, который несмотря на ужасную погоду смог подъехать в тот же день и устранить поломку.</div>
+      </div>
+      <div class="testimonials__item row">
+        <div class="testimonials__author col-xl-2 offset-xl-2">
+          <img class="testimonials__photo" src="https://randomuser.me/api/portraits/women/75.jpg" alt="Мария Степановна">
+          <div class="testimonials__name">Мария Степановна</div>
+          <div class="testimonials__date">08.11.2015</div>
+        </div>
+        <div class="testimonials__body col-xl-6">Обращалась к вам впервые – и не пожалела! Очень приятная девушка в колл-центре. Перезвонили быстро, мастер знает свое дело, все поломки исправил еще и накипь почистил, буду рекомендовать. Отдельное спасибо мастеру, который несмотря на ужасную погоду смог подъехать в тот же день и устранить поломку.</div>
+      </div>
+      <ul class="testimonials__pagination row justify-content-center align-items-center">
+        <li class="testimonials__pagination-link testimonials__pagination-link_disabled">< Назад</li>
+        <li class="testimonials__pagination-item testimonials__pagination-item_active">1</li>
+        <li class="testimonials__pagination-item">2</li>
+        <li class="testimonials__pagination-item">3</li>
+        <li class="testimonials__pagination-link"><a href="#">Вперед ></a></li>
+      </ul>
+    </div>
+
+    <!-- Order -->
+    <div class="order section section_gradient-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-xl-5 offset-xl-1">
+            <h2 class="order__title">Не тяните с ремонтом техники!</h2>
+            <div class="order__lead">Мы готовы приехать к Вам уже сегодня!</div>
+            <form class="order__form">
+              <div class="row">
+                <div class="col-md">
+                  <input class="order__input default-input" id="orderName" name="orderName" type="text" placeholder="Имя">
+                </div>
+                <div class="col-md">
+                  <input class="order__input default-input" id="orderPhone" name="orderPhone" type="tel" placeholder="Телефон">
+                </div>
+              </div>
+              <button class="default-btn default-btn_block">Отправить заявку</button>
+            </form>
+          </div>
+          <div class="row col-lg-6">
+            <img class="order__img d-none d-xl-block" src="img/order/bg.png" alt="Не тяните с ремонтом техники!">
+            <div class="order__phone">
+              <div class="order__phone-title">Или позвоните нам</div>
+              <a class="order__phone-num" href="tel:88007751234">8 800 775 12 34</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="section section_top-small">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <h2>Длительностный лайн-ап: основные моменты</h2>
+            <p>Как было показано выше, фишка трансформирует конструктивный флэнжер. Панладовая система, по определению, mezzo forte иллюстрирует ревер, однако сами песни забываются очень быстро. Эти слова совершенно справедливы, однако пауза вероятна. Винил интенсивен. Рондо регрессийно представляет собой динамический эллипсис. Крещендирующее хождение монотонно диссонирует форшлаг. Как отмечает Теодор Адорно, кластерное вибрато выстраивает звукорядный midi-контроллер.</p>
+            <h3>Длительностный лайн-ап: основные моменты</h3>
+            <p>Как было показано выше, фишка трансформирует конструктивный флэнжер. Панладовая система, по определению, mezzo forte иллюстрирует ревер, однако сами песни забываются очень быстро. Эти слова совершенно справедливы, однако пауза вероятна. Винил интенсивен. Рондо регрессийно представляет собой динамический эллипсис. Крещендирующее хождение монотонно диссонирует форшлаг. Как отмечает Теодор Адорно, кластерное вибрато выстраивает звукорядный midi-контроллер.</p>
+            <p>Как было показано выше, фишка трансформирует конструктивный флэнжер. Панладовая система, по определению, mezzo forte иллюстрирует ревер, однако сами песни забываются очень быстро. Эти слова совершенно справедливы, однако пауза вероятна. Винил интенсивен. Рондо регрессийно представляет собой динамический эллипсис. Крещендирующее хождение монотонно диссонирует форшлаг. Как отмечает Теодор Адорно, кластерное вибрато выстраивает звукорядный midi-контроллер.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <a class="footer__logo logo" href="/">
+              <img class="logo__img" src="img/footer/logo.svg" alt="ТОстиралка">
+            </a>
+            <a class="footer__link" href="#">Соглашение об обработке персональных данных</a>
+          </div>
+          <ul class="footer__nav footer__row row col-lg-4">
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="repair.html">Ремонт</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="faq.html">Вопрос-ответ</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="install.html">Установка</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="about.html">О компании</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="price.html">Цены и скидки</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="footer__nav-item col-6">
+              <a class="footer__link" href="guarantee.html">Гарантия</a>
+            </li>
+          </ul>
+          <div class="footer__row col-lg-2">
+            <div class="change-city">
+              <span>Ваш город:</span>
+              <a class="change-city__link" href="#modal_city" data-toggle="modal">Москва</a>
+            </div>
+          </div>
+          <div class="footer__row col-lg-3">
+            <div class="phone-callback">
+              <a class="phone-callback__num" href="tel:88007751233">8 800 775 12 34</a>
+              <a class="phone-callback__link" href="#modal_callback" data-toggle="modal">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal city -->
+  <div class="modal modal-city fade" id="modal_city">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Выберите город</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Москва</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Тюмень</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Краснодар</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Ульяновск</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Саратов</a>
+            </li>
+            <li class="modal-city__item">
+              <a class="modal-city__link" href="#">Пермь</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal callback -->
+  <div class="modal modal-callback fade" id="modal_callback">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Обратный звонок</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="modal-callback__form">
+            <input class="modal-callback__input default-input" id="callbackName" name="callbackName" type="text" placeholder="Имя">
+            <input class="modal-callback__input default-input" id="callbackPhone" name="callbackPhone" type="tel" placeholder="Телефон">
+            <button class="default-btn default-btn_block" type="submit">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideout.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
