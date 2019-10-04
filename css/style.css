@@ -1819,14 +1819,18 @@ section {
 
 .topbar-burger.on div:nth-child(1) {
   -webkit-transform: rotate(25deg) translate(3px, 7px);
-  transform: rotate(25deg) translate(3px, 7px); }
+  transform: rotate(45deg) translate(4px, 7px);
+  width: 25px;
+  }
 
 .topbar-burger.on div:nth-child(2) {
   display: none; }
 
 .topbar-burger.on div:nth-child(3) {
   -webkit-transform: rotate(-25deg) translate(3px, -7px);
-  transform: rotate(-25deg) translate(3px, -7px); }
+  transform: rotate(-45deg) translate(4px, -7px);
+  width: 25px;
+  }
 
 .write-btn {
   z-index: 1;
@@ -2020,11 +2024,12 @@ section {
     overflow: hidden;
     display: block;
     margin-top: 30px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     background-color: #f0f0f0;
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.01);
-    cursor: pointer; }
+    cursor: pointer;
+    }
     .works-item img {
       display: block;
       width: 100%;
