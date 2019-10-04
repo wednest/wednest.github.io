@@ -1,0 +1,414 @@
+@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+@import "../libs/bootstrap/scss/_mixins.scss"
+  
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700|Fira+Sans&subset=cyrillic')
+
+@font-face
+  font-family: 'Intro Light'
+  src: url('../fonts/Intro-Light.woff')
+
+@font-face
+  font-family: 'Intro Black'
+  src: url('../fonts/Intro-Black.woff')
+
+
+// Vars
+$main-color: #232b34
+$accent: #008cd1
+$accent2: #e6f7ff
+$text-color: #3d3d3d
+$font-family: 'Exo 2', sans-serif
+$fira: 'Fira Sans', sans-serif
+$intro: 'Intro Light', sans-serif
+// Vars End
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  height: 100%
+
+body
+  position: relative
+  background-color: #ffffff
+  color: $text-color
+  font-family: $font-family
+  font-size: 16px
+  line-height: 1.5
+  letter-spacing: normal
+  font-weight: 400
+  min-width: 320px
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto
+
+.footer
+  flex: 0 0 auto
+
+a
+  color: $accent
+  text-decoration: none
+  outline: none
+
+ul
+  list-style: none
+
+input
+  outline: none
+
+h1
+  line-height: 1.2
+  font-size: 49px
+  font-family: $intro
+  font-weight: 400
+
+.blue-btn
+  display: inline-flex
+  align-items: center
+  background: $accent
+  color: #ffffff
+  font-size: 18px
+  letter-spacing: .05em
+  font-weight: bold
+  padding: 14px 20px
+  border-radius: 25px
+  font-family: $fira
+  box-shadow: 0px 0px 5px 0px rgba(0, 140, 209, 0.75)
+  line-height: 1
+  transition: background-color .2s ease
+  img
+    margin-right: 14px
+  &:hover
+    background: lighten($accent, 5%)
+
+.text-center
+  text-align: center
+
+.tree
+  background: url('../img/tree-bg.jpg') center no-repeat
+  background-size: cover
+  &__img
+    max-width: 1463px
+    height: 262px
+    margin: 0 auto
+    background: url('../img/tree.png') center no-repeat
+
+// Styles
+  
+.topbar
+  display: flex 
+  box-shadow: inset 0px -3px 5px 0px rgba(0, 0, 0, 0.07)
+  background: #ffffff
+  padding: 30px 0
+
+  &__burger
+    display: none
+    width: 50px
+    height: 36px
+    position: relative
+    cursor: pointer
+    margin-left: 30px
+    > div
+      position: absolute
+      width: 100%
+      height: 6px
+      background: $accent
+      left: 0
+      box-shadow: 0px 0px 5px 0px rgba(0, 140, 209, 0.75)
+      transition: all .2s ease
+      &:nth-child(1)
+        top: 0
+      &:nth-child(2)
+        top: calc(50% - 3px)
+      &:nth-child(3)
+        bottom: 0
+    &:hover > div
+      background: lighten($accent, 5%)
+
+    &.active
+      div:nth-child(1)
+        top: 15px
+        transform: rotate(-45deg)
+      div:nth-child(2)
+        display: none
+      div:nth-child(3)
+        bottom: 15px
+        transform: rotate(45deg)
+
+.img-responsive
+  display: block
+  width: 100%
+  height: auto
+
+.main-nav
+  li
+    display: inline-block
+    font-family: $fira
+    font-size: 18px
+    margin: 0 20px
+    a
+      color: $text-color
+      &:hover
+        color: $accent
+        border-bottom: 1px solid $accent
+    &.active
+      a
+        font-family: 'Intro Black'
+        color: $accent
+        border-bottom: 2px solid $accent
+
+.mobile-menu
+  display: none
+  padding: 10px 0
+  background: $accent
+  ul
+    li
+      display: block
+      a
+        display: block
+        text-align: center
+        font-family: $fira
+        font-size: 18px
+        font-weight: 300
+        padding: 10px 0
+        color: #ffffff
+      &:hover
+        background: lighten($accent, 3%)
+      &.active
+        background: darken($accent, 2%)
+
+.add-review-btn
+  margin-top: 30px
+
+.footer
+  display: flex
+  background: $accent
+  padding: 15px 0
+  & .main-nav a
+    color: #ffffff
+    &:hover
+      color: #ffffff
+      border-bottom: 1px solid #ffffff
+
+.default-sec
+  padding-top: 50px
+  padding-bottom: 50px
+  
+.bg-blue
+  background: $accent2
+
+.bg-blue-light
+  background: #eff9ff
+
+.offer
+  background: #ffffff
+  padding-left: 70px
+  padding-right: 40px
+
+  &__list
+    margin-bottom: 50px
+    li
+      margin: 15px 0
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: 22px
+        background: #cdcdcd
+        height: 1px
+        position: absolute
+        top: 12px
+        left: -36px
+
+  &__img
+    position: absolute
+    bottom: 75px
+    right: 150px
+
+
+.border-block
+  border: 20px solid $accent2
+  padding: 40px
+  margin-top: 70px
+  position: relative
+  background: #ffffff
+  h1
+    display: flex
+    align-items: center
+    background: #ffffff
+    position: absolute
+    top: -38px
+    left: 20px
+    padding: 0 20px
+    .date
+      font-size: 16px
+      font-family: $font-family
+      margin-left: 20px
+
+p
+  margin-top: 15px
+
+.video-review
+  p
+    margin-bottom: 40px
+  .blue-btn
+    margin-top: 50px
+  video
+    margin-bottom: 20px
+
+.header-desc
+  font-size: 20px
+  color: #6a6a6a
+  line-height: normal
+  font-family: $intro
+  margin-top: 25px
+
+.breadcrumbs
+  display: block
+  li
+    display: inline-block
+    border-right: 1px solid #d0d0d0
+    padding: 0 10px
+    line-height: 1
+    a
+      font-family: $fira
+      color: $accent
+      border-bottom: 1px solid $accent
+    &.active
+      a
+        color: $text-color
+        border-bottom: none
+        &:hover
+          border-bottom: 1px solid $text-color
+        
+    &:first-child
+      padding-left: 0
+    &:last-child
+      border: none
+
+.page-head-text
+  font-size: 33px
+  font-family: 'Intro Black', sans-serif
+  padding-bottom: 36px
+  margin-bottom: 50px
+  border-bottom: 1px solid #daeff9
+
+.main-desc
+  background: url('../img/main-desc-bg.jpg') center no-repeat
+  background-size: cover
+
+// contact !!!
+
+.contact-list
+  li
+    font-family: $intro
+    font-size: 16px
+    display: flex
+    align-items: center
+    margin: 10px 0
+    color: #333333
+    img
+      margin-right: 10px
+    a
+      color: $accent
+      border-bottom: 2px solid $accent
+      font-family: 'Intro Black', sans-serif
+      line-height: 1.4
+      margin-left: 10px
+    &.phone a
+      border-bottom: none
+
+// price !!!
+
+.price-item
+  margin-top: 30px
+  padding: 30px
+
+  &__title
+    font-size: 24px
+    font-family: 'Intro Black', sans-serif
+    font-weight: bold
+    padding: 10px 0
+    border-bottom: 1px solid #daeff9
+
+  &__img
+    margin: 0 auto
+    display: block
+    max-width: 100%
+
+  &__desc
+    padding: 10px 0
+    border-bottom: 1px solid #daeff9
+
+  &__time
+    margin-top: 15px
+
+  &__buy
+    &__price
+      padding: 0 15px
+      border-radius: 25px
+      border: 2px solid $accent
+      color: $accent
+      font-size: 24px
+      font-family: $intro
+      font-weight: bold
+      margin: 15px 0
+      margin-right: 10px
+
+
+// Styles End
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .topbar
+    & .blue-btn
+      display: none
+    &__burger
+      display: block
+    .main-nav
+      display: none
+  
+  .offer__img
+    right: 45px
+    bottom: 65px
+
+
+// ≥992px
++media-breakpoint-down(md)
+        
+
+// ≥768px
++media-breakpoint-down(sm)
+  h1
+    font-size: 25px
+  .border-block
+    h1
+      top: -23px
+      left: 0
+
+
+  .footer
+    flex-direction: column
+    a
+      margin-bottom: 20px
+    .main-nav
+      li
+        display: block
+        text-align: center
+        margin: 10px
+
+// ≥576px
++media-breakpoint-down(xs)
+  .border-block
+    padding: 15px
+    border-width: 15px
